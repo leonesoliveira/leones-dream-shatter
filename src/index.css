@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Leones Dark Theme - Deep blacks, blood reds, charcoal grays */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    /* Igreja Família Caminho - Azul sereno, branco puro, cinza suave */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 15%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 98%;
+    --card-foreground: 220 20% 15%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
 
-    /* Blood Red Primary */
-    --primary: 0 100% 27%;
-    --primary-foreground: 0 0% 98%;
+    /* Azul principal (calmo e confiável) */
+    --primary: 210 85% 50%;
+    --primary-foreground: 0 0% 100%;
     
-    /* Crimson accent */
-    --secondary: 0 63% 15%;
-    --secondary-foreground: 0 0% 98%;
+    /* Azul claro secundário */
+    --secondary: 210 60% 92%;
+    --secondary-foreground: 220 20% 15%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 0 100% 35%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 75% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 15%;
-    --ring: 0 100% 35%;
+    --border: 210 30% 88%;
+    --input: 210 30% 92%;
+    --ring: 210 85% 50%;
 
     --radius: 0.75rem;
 
-    /* Red glow effects */
-    --glow-red: 0 100% 27%;
-    --glow-crimson: 0 100% 45%;
+    /* Efeitos suaves de brilho azul */
+    --glow-blue: 210 85% 50%;
+    --glow-light: 210 75% 70%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 4%) 0%, hsl(0, 100%, 10%) 50%, hsl(0, 0%, 4%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 6%) 100%);
+    /* Gradientes suaves */
+    --gradient-hero: linear-gradient(135deg, hsl(210, 60%, 95%) 0%, hsl(0, 0%, 100%) 50%, hsl(210, 60%, 92%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 60%, 98%) 100%);
     
-    /* Shadows */
-    --shadow-glow: 0 0 30px hsla(0, 100%, 35%, 0.3);
-    --shadow-glow-strong: 0 0 50px hsla(0, 100%, 45%, 0.5);
+    /* Sombras suaves */
+    --shadow-soft: 0 2px 10px hsla(210, 30%, 50%, 0.08);
+    --shadow-medium: 0 4px 20px hsla(210, 30%, 50%, 0.12);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -97,13 +97,13 @@ All colors MUST be HSL.
     50% { border-color: hsl(var(--primary)) }
   }
   
-  /* Glow effects */
-  .glow-red {
-    box-shadow: var(--shadow-glow);
+  /* Soft shadow effects */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
   }
   
-  .glow-red-strong {
-    box-shadow: var(--shadow-glow-strong);
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
   }
   
   /* Parallax container */
